@@ -1,13 +1,85 @@
+:root {
+  --color-bg-dark: #444655;
+  --color-bg: #f5f4f6;
+  --color-list-bg: white;
+  --color-dark-grey: #4c4959;
+  --color-light-grey: #d2d0d4;
+  --color-text: #3e3e3e;
+  --color-white: white;
+  --color-accent: rgb(179, 80, 255);
+  --color-scrollbar: #d8d8d8;
+}
+
+/* Dark Mode */
+html.dark {
+  --color-bg: #1a1c33;
+  --color-list-bg: #222439;
+  --color-text: white;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.2rem;
+  /* 기본 브라우저 UI 대신에 내가 지정한 accent-color를 적용 */
+  accent-color: var(--color-accent);
+  background-color: var(--color-bg-dark);
+}
+
+#root {
+  width: 100%;
+  height: 70%;
+  max-width: 500px;
+  border-radius: 0.8rem;
+  background-color: var(--color-bg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  /* Safari and Chrome */
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--color-ligth-grey);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-accent);
 }
