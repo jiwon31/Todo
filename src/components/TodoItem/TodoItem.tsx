@@ -1,4 +1,4 @@
-import { Todo } from "components/TodoList/TodoList";
+import { Todo } from "components/TodoList/todo_presenter";
 import { BsFillTrashFill } from "react-icons/bs";
 import styles from "./TodoItem.module.css";
 

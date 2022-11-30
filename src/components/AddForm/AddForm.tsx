@@ -1,10 +1,10 @@
-import { Todo } from "components/TodoList/TodoList";
+import { Todo } from "components/TodoList/todo_presenter";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import styles from "./AddForm.module.css";
 
 type AddFormProps = {
-  onAdd: (todo: Todo) => void;
+  onAdd: (added: Todo) => void;
 };
 
 export default function AddForm({ onAdd }: AddFormProps) {
@@ -15,7 +15,7 @@ export default function AddForm({ onAdd }: AddFormProps) {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // trim() 메서드는 문자열 양 끝의 공백을 제거하고 원본 문자열을 수정하지 않고 새로운 문자열을 반환한다.
+    // trim(): 문자열 양 끝의 공백을 제거하고 원본 문자열을 수정하지 않고 새로운 문자열을 반환한다.
     if (text.trim().length === 0) {
       return;
     }
