@@ -3,7 +3,7 @@ import AddForm from "components/AddForm/AddForm";
 import TodoItem from "components/TodoItem/TodoItem";
 import { useState, useEffect } from "react";
 import styles from "./TodoList.module.css";
-import TodoPresenter, { Todo } from "./todo_presenter";
+import { Todo, TodoPresenter } from "./todo_presenter";
 
 type TodoListProps = {
   present: TodoPresenter;

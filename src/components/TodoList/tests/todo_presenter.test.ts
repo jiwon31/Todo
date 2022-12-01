@@ -1,4 +1,8 @@
-import TodoPresenter, { Todo } from "../todo_presenter";
+import {
+  Todo,
+  TodoPresenter,
+  TodoPresenterImpl,
+} from "components/TodoList/todo_presenter";
 
 describe("Todos", () => {
   const todos: Todo[] = [
@@ -9,7 +13,7 @@ describe("Todos", () => {
   let update: () => void;
 
   beforeEach(() => {
-    presenter = new TodoPresenter(todos);
+    presenter = new TodoPresenterImpl(todos);
     update = jest.fn();
   });
 

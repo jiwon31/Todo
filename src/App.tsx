@@ -1,6 +1,6 @@
 import Header from "components/Header/Header";
 import TodoList from "components/TodoList/TodoList";
-import TodoPresenter from "components/TodoList/todo_presenter";
+import { TodoPresenter } from "components/TodoList/todo_presenter";
 import { DarkModeProvider } from "context/DarkModeContext";
 import { useState } from "react";
 

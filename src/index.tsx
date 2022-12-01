@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import TodoPresenter, { Todo } from "components/TodoList/todo_presenter";
+import { Todo, TodoPresenterImpl } from "components/TodoList/todo_presenter";
 
-const todoPresenter = new TodoPresenter(getTodosFromLocalStorage());
+const todoPresenter = new TodoPresenterImpl(getTodosFromLocalStorage());
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );

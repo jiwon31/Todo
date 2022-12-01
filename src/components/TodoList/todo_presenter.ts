@@ -1,5 +1,13 @@
 import { Filter } from "App";
 
+export interface TodoPresenter {
+  getTodos(): Todo[];
+  add(added: Todo, update: UpdateTodo): void;
+  delete(deleted: Todo, update: UpdateTodo): void;
+  update(updated: Todo, update: UpdateTodo): void;
+  getFilteredTodos(filter: Filter): Todo[];
+}
+
 export type Todo = {
   id: string;
   text: string;
@@ -7,15 +15,15 @@ export type Todo = {
 };
 type UpdateTodo = (todos: Todo[]) => void;
 
-export default class TodoPresenter {
+export class TodoPresenterImpl implements TodoPresenter {
   constructor(private todos: Todo[]) {}
 
   getTodos(): Todo[] {
     return this.todos;
   }
 
-  add(todo: Todo, update: UpdateTodo) {
-    this.todos = [...this.todos, todo];
+  add(added: Todo, update: UpdateTodo) {
+    this.todos = [...this.todos, added];
     update(this.todos);
   }
 
