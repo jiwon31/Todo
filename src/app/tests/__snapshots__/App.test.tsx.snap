@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders 1`] = `
+Array [
+  <header
+    className="header"
+  >
+    <button
+      className="toggle"
+      onClick={[Function]}
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 16 16"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+        />
+      </svg>
+    </button>
+    <ul
+      className="filters"
+    >
+      <li>
+        <button
+          className="filter selected"
+          onClick={[Function]}
+        >
+          all
+        </button>
+      </li>
+      <li>
+        <button
+          className="filter false"
+          onClick={[Function]}
+        >
+          active
+        </button>
+      </li>
+      <li>
+        <button
+          className="filter false"
+          onClick={[Function]}
+        >
+          completed
+        </button>
+      </li>
+    </ul>
+  </header>,
+  <section
+    className="container"
+  >
+    <ul
+      className="list"
+    >
+      <li
+        className="todo"
+      >
+        <input
+          checked={false}
+          className="checkbox"
+          data-testid="checkbox"
+          id="280a"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <label
+          className="text false"
+          data-testid="todo-text"
+          htmlFor="280a"
+        >
+          studying
+        </label>
+        <button
+          className="button"
+          onClick={[Function]}
+          title="delete"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"
+            />
+          </svg>
+        </button>
+      </li>
+      <li
+        className="todo"
+      >
+        <input
+          checked={true}
+          className="checkbox"
+          data-testid="checkbox"
+          id="280b"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <label
+          className="text completed"
+          data-testid="todo-text"
+          htmlFor="280b"
+        >
+          running
+        </label>
+        <button
+          className="button"
+          onClick={[Function]}
+          title="delete"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"
+            />
+          </svg>
+        </button>
+      </li>
+      <li
+        className="todo"
+      >
+        <input
+          checked={false}
+          className="checkbox"
+          data-testid="checkbox"
+          id="280c"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <label
+          className="text false"
+          data-testid="todo-text"
+          htmlFor="280c"
+        >
+          eating
+        </label>
+        <button
+          className="button"
+          onClick={[Function]}
+          title="delete"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"
+            />
+          </svg>
+        </button>
+      </li>
+    </ul>
+    <form
+      className="form"
+      onSubmit={[Function]}
+    >
+      <input
+        className="input"
+        onChange={[Function]}
+        placeholder="Add Todo"
+        type="text"
+        value=""
+      />
+      <button
+        className="button"
+      >
+        Add
+      </button>
+    </form>
+  </section>,
+]
+`;

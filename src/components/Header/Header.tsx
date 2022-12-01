@@ -1,4 +1,4 @@
-import { Filter } from "App";
+import { Filter } from "app/App";
 import { useDarkMode } from "context/DarkModeContext";
 import { BsFillMoonFill } from "react-icons/bs";
 import { IoSunny } from "react-icons/io5";

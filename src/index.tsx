@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
+import App from "./app/App";
 import { Todo, TodoPresenterImpl } from "components/TodoList/todo_presenter";
 
 const todoPresenter = new TodoPresenterImpl(getTodosFromLocalStorage());

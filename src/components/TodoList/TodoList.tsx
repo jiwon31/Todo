@@ -1,4 +1,4 @@
-import { Filter } from "App";
+import { Filter } from "app/App";
 import AddForm from "components/AddForm/AddForm";
 import TodoItem from "components/TodoItem/TodoItem";
 import { useState, useEffect } from "react";

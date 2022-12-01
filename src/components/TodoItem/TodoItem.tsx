@@ -22,6 +22,7 @@ export default function TodoItem({ todo, onDelete, onUpdate }: TodoItemProps) {
     <li className={styles.todo}>
       <input
         className={styles.checkbox}
+        data-testid="checkbox"
         id={id}
         type="checkbox"
         checked={status === "completed"}
@@ -32,10 +33,11 @@ export default function TodoItem({ todo, onDelete, onUpdate }: TodoItemProps) {
         className={`${styles.text} ${
           status === "completed" && styles.completed
         }`}
+        data-testid="todo-text"
       >
         {text}
       </label>
-      <button className={styles.button} onClick={handleDelete}>
+      <button className={styles.button} title="delete" onClick={handleDelete}>
         <BsFillTrashFill />
       </button>
     </li>

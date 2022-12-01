@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddForm renders 1`] = `
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <input
+    className="input"
+    onChange={[Function]}
+    placeholder="Add Todo"
+    type="text"
+    value=""
+  />
+  <button
+    className="button"
+  >
+    Add
+  </button>
+</form>
+`;

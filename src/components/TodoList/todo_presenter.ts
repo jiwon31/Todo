@@ -1,4 +1,4 @@
-import { Filter } from "App";
+import { Filter } from "app/App";
 
 export interface TodoPresenter {
   getTodos(): Todo[];
