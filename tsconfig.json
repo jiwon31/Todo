@@ -22,7 +22,8 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
+    "types": ["cypress", "@testing-library/cypress", "node"]
   },
-  "include": ["src"]
+  "include": ["src", "**/*.ts"]
 }

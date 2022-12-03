@@ -19,7 +19,11 @@ export default function Header({
 
   return (
     <header className={styles.header}>
-      <button className={styles.toggle} onClick={toggleDarkMode}>
+      <button
+        className={styles.toggle}
+        data-testid="theme"
+        onClick={toggleDarkMode}
+      >
         {darkMode ? <IoSunny color="white" /> : <BsFillMoonFill />}
       </button>
       <ul className={styles.filters}>
