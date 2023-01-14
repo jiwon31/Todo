@@ -5,10 +5,7 @@ export type DarkMode = {
   toggleDarkMode: () => void;
 };
 
-const DarkModeContext = createContext<DarkMode>({
-  darkMode: false,
-  toggleDarkMode: () => {},
-});
+const DarkModeContext = createContext<DarkMode | null>(null);
 
 export function DarkModeProvider({ children }: { children: React.ReactNode }) {
   const [darkMode, setDarkMode] = useState(false);
@@ -44,4 +41,4 @@ function updateDarkMode(darkMode: boolean) {
 }
 
 // 사용하는 곳에서 그냥 useDarkMode를 호출하면 내부적으로 어떤 context를 쓰는지 신경쓰지 않아도 된다.
-export const useDarkMode = () => useContext(DarkModeContext);
+export const useDarkMode = () => useContext(DarkModeContext) as DarkMode;
