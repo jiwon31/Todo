@@ -24,7 +24,7 @@ export default function Header({
         data-testid="theme"
         onClick={toggleDarkMode}
       >
-        {darkMode ? <IoSunny color="white" /> : <BsFillMoonFill />}
+        {darkMode ? <IoSunny className={styles.sunny} /> : <BsFillMoonFill />}
       </button>
       <ul className={styles.filters}>
         {filters.map((value, index) => (

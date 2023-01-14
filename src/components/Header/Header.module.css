@@ -19,6 +19,14 @@
   color: var(--color-accent);
 }
 
+.sunny {
+  color: var(--color-white);
+}
+
+.sunny:hover {
+  color: var(--color-accent);
+}
+
 .filters {
   display: flex;
   margin: 0;
